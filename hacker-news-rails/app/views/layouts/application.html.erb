@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LearningRails</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <link href="http://d2v52k3cl9vedd.cloudfront.net/basscss/6.1.0/basscss.min.css" rel="stylesheet">
+</head>
+<body>
+<nav class="clearfix black bg-orange">
+  <div class="sm-col">
+  <img id="logo" src="https://www.ycombinator.com/images/ycombinator-logo-fb889e2e.png">
+    <a href="/" class="button py2 button-transparent">Hacker News</a>
+    <a href="/post/new" class="button py2 button-transparent">New</a>
+    <a href="/" class="button py2 button-transparent">Comments</a>
+    <a href="/" class="button py2 button-transparent">Show</a>
+    <a href="/" class="button py2 button-transparent">Jobs</a>
+  </div>
+  <div class="sm-col-right">
+    <a href="/login" class="button py2 button-transparent">Login</a>
+  </div>
+</nav>
+<%= yield %>
+
+</body>
+</html>
